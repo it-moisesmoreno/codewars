@@ -32,3 +32,15 @@ public class isogram {
         return true;
     } 
 }
+
+// Refactor 0
+public class isogramRefac0 {
+    public static boolean  isIsogram(String str) {
+      
+      // Useing Stream
+      return str.length() == str.toLowerCase().chars()
+        .distinct()
+        .count();
+      
+    } 
+}
